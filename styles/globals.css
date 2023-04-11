@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'DrukTextWideCyr-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/druktextwidecyr-bold.eot');
+  /* IE 9 Compatibility Mode */
+  src: url('/fonts/druktextwidecyr-bold.eot?#iefix') format('embedded-opentype'),
+      /* IE < 9 */
+      url('/fonts/druktextwidecyr-bold.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('/fonts/druktextwidecyr-bold.woff') format('woff'),
+      /* Firefox >= 3.6, any other modern browser */
+      url('/fonts/druktextwidecyr-bold.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('/fonts/druktextwidecyr-bold.svg#druktextwidecyr-bold') format('svg');
+  /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  font-weight: 400;
+  src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('/fonts/Montserrat-Regular.woff') format('woff'),
+      url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #161617;
+  background-image: url(/images/bg.png);
+  --tw-text-opacity: 1;
+    color: rgb(249 250 251 / var(--tw-text-opacity));
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+}
+
+.montserrat-400 {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+}
+
+.druk-700 {
+  font-family: 'DrukTextWideCyr-Bold';
+  font-weight: 700;
+}
+
+.window {
+  background-color: #2F2F32;
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+  -ms-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #161617;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #2dd4bf;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #161617;
+}
