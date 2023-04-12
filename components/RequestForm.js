@@ -8,10 +8,10 @@ const RequestForm = () => {
     const [captcha, setCaptcha] = useState(false);
     const [errors, setErrors] = useState({});
 
-    const SITE_KEY = "6Lel53AlAAAAAKPgom5PzUokVM0LVF6sPcD4hhjr";
+    const SITE_KEY = ""; // Site key for ReCAPTCHA
     let tg = {
-        token: "6243442657:AAH27BrlixUuF6quWp1o6Vr3CsJcKWu0WcU", // Your bot's token that got from @BotFather
-        chat_id: "322369371", // The user's(that you want to send a message) telegram chat id
+        token: "", // Your bot's token that got from @BotFather
+        chat_id: "", // The user's(that you want to send a message) telegram chat id
     };
 
     const handleChange = ({ target }) => {
